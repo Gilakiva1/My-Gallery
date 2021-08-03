@@ -18,8 +18,8 @@ function getPortfolioById(id) {
 
 function createPortfolios() {
     gPortfolio = [
-        _createPortfolio('mine sweeper', 'Lorem ipsum dolor', 'https://gilakiva1.github.io/mine-sweeper/', 'img/portfolio/mine.jpg'),
-        _createPortfolio('pacman', 'Lorem ipsum dolor', 'https://gilakiva1.github.io/packman/', 'img/portfolio/packmen.jpg')
+        _createPortfolio('mine sweeper', 'Lorem ipsum dolor', 'https://gilakiva1.github.io/mine-sweeper/'),
+        _createPortfolio('pacman', 'Lorem ipsum dolor', 'https://gilakiva1.github.io/packman/')
      
     ];
 
@@ -28,14 +28,14 @@ function getPortfolios(){
     return gPortfolio;
 }
 
-function _createPortfolio(name, title, url, img) {
+function _createPortfolio(name, title, url) {
     return {
         id: makeId(),
         name,
         title,
         desc: "lorem ipsum lorem ipsum lorem ipsum",
         url,
-        img,
+        img:'img/portfolio/project.jpg',
         labels: ["Matrixes", "keyboard events"]
     }
 

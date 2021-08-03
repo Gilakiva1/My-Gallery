@@ -190,7 +190,11 @@ body {
 header.masthead {
     text-align: center;
     color: white;
-    background-image: url("../img/header-bg.jpg");
+    background:linear-gradient(
+        rgba(6, 81, 243, 0.45), 
+        rgba(114, 140, 255, 0.45)
+      ), url("../img/header-bg.jpg");
+    
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -766,4 +770,14 @@ fieldset[disabled] .btn-xl:hover {
 .container {
     padding-right: 0;
     padding-left: 0;
+}
+.HTML5-color{
+    color: #e44d26 !important;
+}
+.js-img {
+    width: 135px;
+}
+.css3-color{
+    color: #2a65f1 !important;
+
 }
